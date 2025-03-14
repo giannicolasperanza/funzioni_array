@@ -47,27 +47,47 @@
 
 // // ------------------terzo esercizio--------------------
 
-function stampaNumeri(N){
+// function stampaNumeri(N){
 
-    for(let i = 1; i <= N; i++){
+//     for(let i = 1; i <= N; i++){
         
         
-        if(i % 15 == 0){
-            console.log("fizzBuzz");
-        }else if(i % 3 == 0){
-            console.log("fizz")
-        }else if(i % 5 == 0){
-            console.log("buzz")
-        }else{
-            console.log(i);
-        }     
+//         if(i % 15 == 0){
+//             console.log("fizzBuzz");
+//         }else if(i % 3 == 0){
+//             console.log("fizz")
+//         }else if(i % 5 == 0){
+//             console.log("buzz")
+//         }else{
+//             console.log(i);
+//         }     
         
-    }
+//     }
 
-    return "completato"
+//     return "completato"
+// }
+
+
+// console.log(stampaNumeri(30));
+
+// // ------------------ fine terzo esercizio--------------------
+
+// // ------------------ quarto esercizio--------------------
+
+
+function contaCifre (numero){
+        
+        if(numero.length > 4){
+            console.log("Numero troppo grande");
+            } else{
+                console.log(`Il numero ${numero} è composto da ${numero.length} cifre`);
+            }
+
+    return ""
+    
 }
 
 
-console.log(stampaNumeri(30));
+console.log(contaCifre(prompt("Inserisci un numero")));
 
-// // ------------------terzo esercizio--------------------
+// // ------------------ fine quarto esercizio--------------------
