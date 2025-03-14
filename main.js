@@ -25,23 +25,49 @@
 
 // ------------- secondo esercizio-----------------
 
-function tiroDadi(nomeGiocatore, tiri){
+// function tiroDadi(nomeGiocatore, tiri){
     
-    let risultato = 0;
-    for(let i = 1; i <= tiri; i++){
+//     let risultato = 0;
+//     for(let i = 1; i <= tiri; i++){
 
-        risultato = risultato + Math.floor(Math.random() * (6 - 1) + 1) ;
+//         risultato = risultato + Math.floor(Math.random() * (6 - 1) + 1) ;
+//     }
+
+//     return  ` Il giocatore ${nomeGiocatore} ha totalizzato un punteggio di : ${risultato} con ${tiri} tiri` ;
+
+// }
+
+// let primaGiocata = tiroDadi(prompt("Inserisci il tuo nome"), Number(prompt("Inserisci numero di tiri")));
+// console.log(primaGiocata);
+
+// let secondaGiocata = tiroDadi(prompt("Inserisci il tuo nome"), Number(prompt("Inserisci numero di tiri")));
+// console.log(secondaGiocata);
+
+// // -------------fine  secondo esercizio-----------------
+
+// // ------------------terzo esercizio--------------------
+
+function stampaNumeri(N){
+
+    for(let i = 1; i <= N; i++){
+        
+        
+        if(i % 15 == 0){
+            console.log("fizzBuzz");
+        }else if(i % 3 == 0){
+            console.log("fizz")
+        }else if(i % 5 == 0){
+            console.log("buzz")
+        }else{
+            console.log(i);
+        }     
+        
     }
 
-    return  ` Il giocatore ${nomeGiocatore} ha totalizzato un punteggio di : ${risultato} con ${tiri} tiri` ;
-
+    return "completato"
 }
 
-let primaGiocata = tiroDadi(prompt("Inserisci il tuo nome"), Number(prompt("Inserisci numero di tiri")));
-console.log(primaGiocata);
 
-let secondaGiocata = tiroDadi(prompt("Inserisci il tuo nome"), Number(prompt("Inserisci numero di tiri")));
-console.log(secondaGiocata);
+console.log(stampaNumeri(30));
 
-// -------------fine  secondo esercizio-----------------
-
+// // ------------------terzo esercizio--------------------
