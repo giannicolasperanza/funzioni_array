@@ -96,26 +96,46 @@
 
 
 
-function palindromo(stringa){
+// function palindromo(stringa){
 
-    let senzaSpazi = stringa.replaceAll(" ","");
-    let inverso = senzaSpazi.split("").reverse().join("");
+//     let senzaSpazi = stringa.replaceAll(" ","");
+//     let inverso = senzaSpazi.split("").reverse().join("");
 
-    if(senzaSpazi == inverso){
-            return true;
+//     if(senzaSpazi == inverso){
+//             return true;
             
-    }else{
-    return false;
+//     }else{
+//     return false;
     
-} 
+// } 
 
-}
+// }
 
 
-console.log(palindromo("i topi non avevano nipoti"));
+// console.log(palindromo("i topi non avevano nipoti"));
 
 // // // ------------------ fine quinto esercizio --------------------
 
+// // // ------------------ sesto esercizio --------------------
 
+let arr1 = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
+
+function ordinaDecrescente(array){
+
+   return array.sort( (a, b) => b - a );
+}
+
+console.log(ordinaDecrescente(arr1));
+
+function ordinaCrescente(array){
+
+    return array.sort( (a, b) => a - b );
+ }
+ 
+ console.log(ordinaCrescente(arr1));
+
+
+
+// // // ------------------ fine sesto esercizio --------------------
 
 
