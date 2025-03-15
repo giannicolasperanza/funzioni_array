@@ -118,24 +118,51 @@
 
 // // // ------------------ sesto esercizio --------------------
 
-let arr1 = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
+// let arr1 = [3, 7, -2, 5, 8, 1, 2, 5, 6, -4, 12, 25];
 
-function ordinaDecrescente(array){
+// function ordinaDecrescente(array){
 
-   return array.sort( (a, b) => b - a );
+//    return array.sort( (a, b) => b - a );
+// }
+
+// console.log(ordinaDecrescente(arr1));
+
+// function ordinaCrescente(array){
+
+//     return array.sort( (a, b) => a - b );
+//  }
+ 
+//  console.log(ordinaCrescente(arr1));
+
+
+
+// // // // ------------------ fine sesto esercizio --------------------
+
+// // // // ------------------ settimo esercizio --------------------
+
+let a = [3, 5, 10, 2, 8];
+
+
+
+
+function mediaValori(numbers){
+
+let somma = numbers.reduce((acc, n) => acc + n);
+let media = somma / numbers.length;
+let valoriMin = numbers.filter( (n) => n < media );
+let valoriMax = numbers.filter( (n) => n > media );
+
+
+
+return console.log(` La media dell'array è ${media} , e i valori sotto la media sono ${valoriMin} \n i numeri sotto la media sono n. ${valoriMin.length} \n i numeri sopra la media sono n. ${valoriMax.length}`);
+ 
+
 }
 
-console.log(ordinaDecrescente(arr1));
-
-function ordinaCrescente(array){
-
-    return array.sort( (a, b) => a - b );
- }
- 
- console.log(ordinaCrescente(arr1));
 
 
+mediaValori([3, 5, 10, 2, 8]);
 
-// // // ------------------ fine sesto esercizio --------------------
+// // // // ------------------ fine settimo esercizio --------------------
 
 
