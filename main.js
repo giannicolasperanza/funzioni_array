@@ -75,19 +75,47 @@
 // // ------------------ quarto esercizio--------------------
 
 
-function contaCifre (numero){
+// function contaCifre (numero){
         
-        if(numero.length > 4){
-            console.log("Numero troppo grande");
-            } else{
-                console.log(`Il numero ${numero} è composto da ${numero.length} cifre`);
-            }
+//         if(numero.length > 4){
+//             console.log("Numero troppo grande");
+//             } else{
+//                 console.log(`Il numero ${numero} è composto da ${numero.length} cifre`);
+//             }
 
-    return ""
+//     return ""
     
+// }
+
+
+// console.log(contaCifre(prompt("Inserisci un numero")));
+
+// // // ------------------ fine quarto esercizio--------------------
+
+// // // ------------------ quinto esercizio --------------------
+
+
+
+function palindromo(stringa){
+
+    let senzaSpazi = stringa.replaceAll(" ","");
+    let inverso = senzaSpazi.split("").reverse().join("");
+
+    if(senzaSpazi == inverso){
+            return true;
+            
+    }else{
+    return false;
+    
+} 
+
 }
 
 
-console.log(contaCifre(prompt("Inserisci un numero")));
+console.log(palindromo("i topi non avevano nipoti"));
 
-// // ------------------ fine quarto esercizio--------------------
+// // // ------------------ fine quinto esercizio --------------------
+
+
+
+
